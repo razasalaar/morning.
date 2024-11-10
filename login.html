@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- Cart Slider -->
+<div id="cart-slider" class="cart-slider">
+  <div class="cart-header">
+    <span>Shopping Cart</span>
+    <span class="close-btn" onclick="closeCart()">×</span>
+  </div>
+  <div class="cart-content">
+    <p class="sale-text">THE SALE IS HERE!</p>
+    <h2>END OF SEASON SALE!</h2>
+    <p class="discount-text">USE <span class="highlight">SEASON15</span> FOR 15% OFF</p>
+    <p>Your cart is currently empty</p>
+    <button class="shop-btn">Shop now</button>
+  </div>
+</div>
+
+        <!-- Left Side: Navbar Links -->
+        <ul class="nav-links">
+          <li><a href="store.html">Store</a></li>
+          <li><a href="collection.html">Collections</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="theme.html">Theme Features</a></li>
+          <li class="demos-hover"><a href="#">Demos</a></li>
+          <li><a href="sale.html" class="sale">Sale</a></li>
+        </ul>
+
+        <!-- Center: Logo -->
+        <div class="logo"><a href="index.html">morning</a></div>
+
+        <!-- Right Side: Icons -->
+        <div class="nav-icons">
+          <a href="login.html" class="icon login-icon">&#128100;</a>
+          <!-- User Icon -->
+          <a href="#" class="icon cart-icon"
+            >&#128722;<span class="cart-count">0</span></a
+          >
+          <!-- Cart Icon -->
+          <div class="icon search-icon" id="search-icon">&#128269;</div>
+          <!-- Search Icon -->
+        </div>
+
+        <!-- Search Bar Dropdown -->
+        <div class="search-dropdown" id="search-dropdown">
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </nav>
+
+      <!-- Demos Page Iframe Container -->
+      <div class="iframe-container hidden" id="iframeContainer">
+        <iframe src="demos.html" id="demosPage"></iframe>
+      </div>
+    </header>
+</section>
+<section class="pagetitle">
+</section>
+
+    <!-- Video Background Section -->
+      <div class="slider-controls">
+        <span id="prev">&#10094;</span>
+        <span id="next">&#10095;</span>
+      </div>
+   
+
+    <!-- Sidebar Menu for Mobile -->
+    <div class="sidebar">
+      <span class="close-btn">&times;</span>
+      <ul>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="theme.html">Theme Features</a></li>
+        <li><a href="demos.html">Demos</a></li>
+        <li><a href="sale.html" class="sale">Sale</a></li>
+      </ul>
+    </div>
+
+    <div class="login-section">
+        <h2>Login</h2>
+        <form action="#">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+      
+          <div class="form-links">
+            <a href="#">Forgot your password?</a>
+          </div>
+      
+          <button type="submit" class="sign-in-btn">Sign In</button>
+          <a href="#" class="create-account">Create account</a>
+        </form>
+      </div>
+      <section>
+        <div class="gift-section">
+          <h2>Join our newsletter for 10% off</h2>
+          <p>
+            We'll email you a voucher worth 10% off your first order over $50. By subscribing you agree to our
+            <a href="#">Terms & Conditions.</a>
+          </p>
+          <form class="subscription-form">
+            <input type="email" placeholder="email@example.com" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+  
+      </section>
+      <footer class="footer">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Browse</h3>
+            <ul>
+              <li><a href="#">All products</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Theme features</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>About</h3>
+            <p>Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>store@email.com</p>
+            <div class="social-icons">
+              <a href="#"><i class="icon-tiktok"></i></a>
+              <a href="#"><i class="icon-x"></i></a>
+              <a href="#"><i class="icon-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="country">
+            <p>United States (USD $)</p>
+          </div>
+          <div class="payment-icons">
+            <img src="./images/visa.png" alt="Visa">
+            <img src="./images/card.png" alt="Mastercard">
+            <img src="./images/amex.png" alt="Amex">
+            <img src="./images/paypal.png" alt="PayPal">
+            <img src="./images/research.png" alt="Discover">
+          </div>
+          <p class="footer-copyright">Powered by Shopify © 2024, Venue Theme</p>
+        </div>
+      </footer>      
+    <script src="script.js"></script>
+</body>
+</html>

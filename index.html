@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morning</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      
+    />
+    <link rel="preload" href="video1.mp4" as="video">
+
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+<nav class="navbar">
+  <!-- Cart Slider -->
+<div id="cart-slider" class="cart-slider">
+  <div class="cart-header">
+    <span>Shopping Cart</span>
+    <span class="close-btn" onclick="closeCart()">×</span>
+  </div>
+  <div class="cart-content">
+    <p class="sale-text">THE SALE IS HERE!</p>
+    <h2>END OF SEASON SALE!</h2>
+    <p class="discount-text">USE <span class="highlight">SEASON15</span> FOR 15% OFF</p>
+    <p>Your cart is currently empty</p>
+    <button class="shop-btn">Shop now</button>
+  </div>
+</div>
+  <!-- Left Side: Navbar Links -->
+  <ul class="nav-links">
+    <li><a href="store.html">Store</a></li>
+    <li><a href="collection.html">Collections</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="theme.html">Theme Features</a></li>
+    <li class="demos-hover"><a href="#">Demos</a></li>
+    <li ><a href="sale.html" class="sale">Sale</a></li>
+  </ul>
+
+
+
+  
+  <!-- Center: Logo -->
+  <div class="logo"><a href="index.html">morning</a></div>
+  
+
+  <!-- Right Side: Icons -->
+  <div class="nav-icons">
+    <a href="login.html" class="icon login-icon">&#128100;</a>
+    <!-- User Icon -->
+    <a href="#" class="icon cart-icon">&#128722;<span class="cart-count">0</span></a>
+    <!-- Cart Icon -->
+    <div class="icon search-icon" id="search-icon">&#128269;</div>
+    <!-- Search Icon -->
+  </div>
+
+  <!-- Search Bar Dropdown -->
+  <div class="search-dropdown" id="search-dropdown">
+    <input type="text" placeholder="Search..." />
+  </div>
+
+  <!-- Mobile Menu Icon -->
+  <div class="menu-icon">
+    <span>&#9776;</span>
+  </div>
+</nav>
+
+<!-- Demos Page Iframe Container -->
+<div class="iframe-container hidden" id="iframeContainer">
+  <iframe src="demos.html" id="demosPage"></iframe>
+</div>
+
+    </header>
+
+    <!-- Video Background Section -->
+    <section class="image-slider">
+      <img id="image-slider" src="./images/pageee1.png" alt="Slider Image" />
+      <div class="content">
+        <h1>Less but better</h1>
+        <p>
+          This simple phrase is one of our guiding principles. Focus on the most
+          important elements of each garment and let go of everything
+          superfluous.
+        </p>
+        <div class="buttons">
+          <div class="butt1">
+        
+          <button>Shop All</button></div>
+          <div class="butt2">
+          <button>Shop New</button></div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <span id="prev">&#10094;</span>
+        <span id="next">&#10095;</span>
+      </div>
+    </section>
+    
+
+    <!-- Sidebar Menu for Mobile -->
+    <div class="sidebar">
+      <span class="close-btn">&times;</span>
+      <ul>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="theme.html">Theme Features</a></li>
+        <li><a href="demos.html">Demos</a></li>
+        <li><a href="sale.html" class="sale" >Sale</a></li>
+       
+      </ul>
+    </div>
+    <section class="collections-section">
+      <h2>Collections</h2>
+      <div class="collections-tabs">
+        <span class="tab active">New season</span>
+        <span class="tab">Tees & Knits</span>
+        <span class="tab on-sale">On sale</span>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-label">New season</div>
+          <img
+            src="./images/s1.jpg"
+            alt="Portsmith Fleece"
+            class="product-image"
+          />
+          <h3 class="product-name">Portsmith Fleece</h3>
+          <p class="product-price">$49.00</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-label">On Sale</div>
+          <div class="product-label new-season">New season</div>
+          <img src="./images/s2.jpg" alt="Home Tee" class="product-image" />
+          <h3 class="product-name">Home Tee</h3>
+          <p class="product-price sale-price">
+            $18.00 <span class="original-price">$36.00</span>
+          </p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-label">New season</div>
+          <img src="./images/s3.jpg" alt="Stocker Crew" class="product-image" />
+          <h3 class="product-name">Stocker Crew</h3>
+          <p class="product-price">$90.00</p>
+        </div>
+      </div>
+    </section>
+    <section class="quote-section">
+      <div class="quote-icon"><img src="./images/instagram.png" alt="" /></div>
+      <!-- Font Awesome Instagram Icon -->
+      <p class="quote-text">
+        "Always a great day when I get a new package from Morning Apparel. My
+        new backpack is stunning. Thanks guys, you totally rock!"
+      </p>
+      <div class="quote-author">
+        <p>Linda Knight</p>
+        <span>Instagram</span>
+      </div>
+    </section>
+    <section class="philosophy-section">
+      <div class="philosophy-content">
+        <h1 class="title">morning</h1>
+        <p class="quote">
+          ‘Little do ye know your own blessedness; for to travel hopefully is a
+          better thing than to arrive, and the true success is to labour’
+        </p>
+        <p class="author">Robert Louis Stevenson</p>
+        <button class="philosophy-button">Our philosophy</button>
+      </div>
+    </section>
+    <section class="forged-section">
+      <div class="text-content">
+        <h2>Forged in Cali</h2>
+        <div class="underline"></div>
+        <p>
+          Born in a small, Southern California, blue-collar beach town, graced
+          with world-class point breaks and seaside racetracks, where ghosts of
+          a once towering oil industry still linger.
+        </p>
+      </div>
+      <div class="image-content">
+        <img src="./images/bike.jpg" alt="Man on motorcycle" />
+      </div>
+    </section>
+    <section class="friendship-section">
+      <div class="image-content1">
+        <img src="./images/frnd.jpg" alt="Vintage car on road" />
+      </div>
+      <div class="text-content1">
+        <h2>Built on friendship</h2>
+        <div class="underline1"></div>
+        <p>
+          Morning Apparel is the brainchild of several friends who, after
+          decades of collective experience building successful clothing brands,
+          decided to turn back the clock and start anew.
+        </p>
+      </div>
+    </section>
+    <section class="forged-section">
+      <div class="text-content">
+        <h2>Made to Last</h2>
+        <div class="underline"></div>
+        <p>
+          Born in a small, Southern California, blue-collar beach town, graced
+          with world-class point breaks and seaside racetracks, where ghosts of
+          a once towering oil industry still linger.
+        </p>
+      </div>
+      <div class="image-content">
+        <img src="./images/last.jpg" alt="Man on motorcycle" />
+      </div>
+    </section>
+
+    <section>
+      <div class="flex">
+      <div class="store-info-container">
+        <div class="store-info">
+          <h2>Ventura Store</h2>
+          <div class="address">
+            <p>324 E. Main St, Ventura</p>
+            <p>CA 93001</p>
+            <p>(805) 643-0737</p>
+            <a href="mailto:store@email.com">store@email.com</a>
+          </div>
+          <div class="hours">
+            <p>Monday - Thursday, 12:00 to 23:00</p>
+            <p>Friday & Saturday, 12:00 to 00:00</p>
+            <p>Sunday, Closed</p>
+          </div>
+        </div>
+      
+        <div class="store-info">
+          
+          <!-- Add additional store information as needed -->
+        </div>
+      </div>
+        <div class="map">
+          <!-- Replace with an actual map embed -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.953923634866!2d-119.29103758469234!3d34.28055968053379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e841498d3f8351%3A0x7a9f0f6fd8f7046d!2s324%20E%20Main%20St%2C%20Ventura%2C%20CA%2093001%2C%20USA!5e0!3m2!1sen!2s!4v1604473079827!5m2!1sen!2s"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+      <div class="gift-section">
+        <h2>Join our newsletter for 10% off</h2>
+        <p>
+          We'll email you a voucher worth 10% off your first order over $50. By subscribing you agree to our
+          <a href="#">Terms & Conditions.</a>
+        </p>
+        <form class="subscription-form">
+          <input type="email" placeholder="email@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+
+    </section>
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Browse</h3>
+          <ul>
+            <li><a href="#">All products</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Theme features</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About</h3>
+          <p>Our story began in 2001 in a small studio in the middle of nowhere. With only one desk and next to no free time, our brand was born. Our passion for unique design and collaboration brought our vision, and products, to life.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <p>store@email.com</p>
+          <div class="social-icons">
+            <a href="#"><i class="icon-tiktok"></i></a>
+            <a href="#"><i class="icon-x"></i></a>
+            <a href="#"><i class="icon-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="country">
+          <p>United States (USD $)</p>
+        </div>
+        <div class="payment-icons">
+          <img src="./images/visa.png" alt="Visa">
+          <img src="./images/card.png" alt="Mastercard">
+          <img src="./images/amex.png" alt="Amex">
+          <img src="./images/paypal.png" alt="PayPal">
+          <img src="./images/research.png" alt="Discover">
+        </div>
+        <p class="footer-copyright">Powered by Shopify © 2024, Venue Theme</p>
+      </div>
+    </footer>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

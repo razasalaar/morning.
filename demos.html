@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demos</title>
+    <link rel="stylesheet" href="./css/demos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body style="background-color: white">
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- Cart Slider -->
+        <div id="cart-slider" class="cart-slider">
+          <div class="cart-header">
+            <span>Shopping Cart</span>
+            <span class="close-btn" onclick="closeCart()">×</span>
+          </div>
+          <div class="cart-content">
+            <p class="sale-text">THE SALE IS HERE!</p>
+            <h2>END OF SEASON SALE!</h2>
+            <p class="discount-text">
+              USE <span class="highlight">SEASON15</span> FOR 15% OFF
+            </p>
+            <p>Your cart is currently empty</p>
+            <button class="shop-btn">Shop now</button>
+          </div>
+        </div>
+
+        <!-- Left Side: Navbar Links -->
+        <ul class="nav-links">
+          <li><a href="store.html">Store</a></li>
+          <li><a href="collection.html">Collections</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="theme.html">Theme Features</a></li>
+          <li class="demos-hover"><a href="#">Demos</a></li>
+          <li style="color: red"><a href="sale.html" class="sale">Sale</a></li>
+        </ul>
+
+        <!-- Center: Logo -->
+        <div class="logo"><a href="index.html">morning</a></div>
+
+        <!-- Right Side: Icons -->
+        <div class="nav-icons">
+          <a href="#" class="icon login-icon">&#128100;</a>
+          <!-- User Icon -->
+          <a href="#" class="icon cart-icon"
+            >&#128722;<span class="cart-count">0</span></a
+          >
+          <!-- Cart Icon -->
+          <div class="icon search-icon" id="search-icon">&#128269;</div>
+          <!-- Search Icon -->
+        </div>
+
+        <!-- Search Bar Dropdown -->
+        <div class="search-dropdown" id="search-dropdown">
+          <input type="text" placeholder="Search..." />
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+          <span>&#9776;</span>
+        </div>
+      </nav>
+
+      <!-- Demos Page Iframe Container -->
+      <div class="iframe-container hidden" id="iframeContainer">
+        <iframe src="demos.html" id="demosPage"></iframe>
+      </div>
+    </header>
+    <!-- Demos Section -->
+    <section class="demos-section">
+      <div class="demo-item">
+        <img src="./images/E1.png" alt="Evening Demo" />
+        <h3>EVENING</h3>
+        <p>Food & Drink demo</p>
+      </div>
+      <div class="demo-item">
+        <img src="./images/W1.png" alt="Weekend Demo" />
+        <h3>WEEKEND</h3>
+        <p>Jewelry & Accessories demo</p>
+      </div>
+      <div class="demo-item">
+        <img src="./images/T1.png" alt="Twilight Demo" />
+        <h3>TWILIGHT</h3>
+        <p>Health & Beauty demo</p>
+      </div>
+      <div class="demo-item">
+        <img src="./images/s1.png" alt="Sunset Demo" />
+        <h3>SUNSET</h3>
+        <p>Art & Crafts demo</p>
+      </div>
+    </section>
+
+    <!-- Video Background Section -->
+    <section class="video-background">
+      <div class="slider-controls">
+        <span id="prev">&#10094;</span>
+        <span id="next">&#10095;</span>
+      </div>
+    </section>
+
+    <!-- Sidebar Menu for Mobile -->
+    <div class="sidebar">
+      <span class="close-btn">&times;</span>
+      <ul>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="collection.html">Collections</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="theme.html">Theme Features</a></li>
+        <li><a href="demos.html">Demos</a></li>
+        <li><a href="sale.html" class="sale">Sale</a></li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
